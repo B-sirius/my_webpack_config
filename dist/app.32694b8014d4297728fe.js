@@ -1,2 +1,0 @@
-webpackJsonp([0],{"Yq+E":function(e,n){},lVK7:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var c=t("Yq+E"),d=(t.n(c),document.createElement("div"));d.innerHTML='<p class="text">die!!!<p>',document.body.appendChild(d)}},["lVK7"]);
-//# sourceMappingURL=app.32694b8014d4297728fe.js.map

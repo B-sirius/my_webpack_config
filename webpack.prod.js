@@ -13,11 +13,11 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = merge(common, {
     /* 此处需自己按需设置 */
-    // entry: {
-    //     vendor: [
-    //         'lodash' // 需要缓存的模块
-    //     ]
-    // },
+    entry: {
+        vendor: [
+            'clipboard', // 需要缓存的模块
+        ]
+    },
     // 文件出口
     output: {
         filename: '[name].[chunkhash].js', // 输出文件名称
@@ -36,9 +36,9 @@ module.exports = merge(common, {
         }),
         new webpack.HashedModuleIdsPlugin(), // 修复 vendor 的 hash 变化
         /* 此处需自己按需设置 */
-        // new webpack.optimize.CommonsChunkPlugin({ // 需要提取出的模块
-        //     name: 'lodash'
-        // }),
+        new webpack.optimize.CommonsChunkPlugin({ // 需要提取出的模块
+            name: 'clipboard'
+        }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'runtime' // 这里指定公共 bundle 的名称
         })
@@ -56,6 +56,15 @@ module.exports = merge(common, {
                 // 在开发环境使用 style-loader
                 fallback: "style-loader"
             })
+        }, {
+            test: /\.js$/,
+            exclude: /(node_modules|bower_components)/, // 忽略的文件
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['env']
+                }
+            }
         }]
     }
 });

@@ -1,4 +1,157 @@
-.text {
-    font-size: 16px;
-    color: green;
+body {
+    font-family: PingFang SC, STHeitiSC-Light, Helvetica-Light, arial, sans-serifmargink;
+    .color-picker-container {
+        margin-top: 50px;
+        display: inline-block;
+        font-size: 0;
+        .color-panel-wrapper {
+            position: relative;
+            float: left;
+            width: 400px;
+            height: 400px;
+            .panel-btn {
+                position: absolute;
+                top: 0;
+                left: 400px;
+                margin-left: -12px;
+                margin-top: -10px;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                background: #C2C2C2;
+                cursor: pointer;
+            }
+        }
+        .pick-bar-wrapper {
+            position: relative;
+            float: left;
+            width: 8px;
+            height: 400px;
+            margin-left: 23px;
+            .bar {
+                height: 100%;
+                background: linear-gradient(to bottom, hsl(0, 100%, 50%), hsl(60, 100%, 50%), hsl(120, 100%, 50%), hsl(180, 100%, 50%), hsl(240, 100%, 50%), hsl(300, 100%, 50%), hsl(360, 100%, 50%));
+                border-radius: 20px;
+            }
+            .bar-btn {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-left: -8px;
+                margin-top: -12px;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                background: #C2C2C2;
+                cursor: pointer;
+            }
+        }
+        .number-wrapper {
+            float: left;
+            height: 400px;
+            margin-left: 20px;
+            .rgb-wrapper,
+            .hsl-wrapper {
+                height: 50%;
+                box-sizing: border-box;
+                .selector-wrapper {
+                    position: relative;
+                    height: 55px;
+                    font-size: 16px;
+                    .selector {
+                        position: relative;
+                        width: 155px;
+                        height: 100%;
+                        margin-left: 15px;
+                        padding-left: 10px;
+                        padding-right: 40px;
+                        font-size: 16px;
+                        box-sizing: border-box;
+                        border: 2px solid #DEDEDE;
+                        border-radius: 3px;
+                        outline: none;
+                    }
+                    .selector-btn {
+                        width: 40px;
+                        height: 50%;
+                        font-size: 14px;
+                        border-left: 2px solid #DEDEDE;
+                        cursor: pointer;
+                        &.down {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+                        &.up {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                        &:hover {
+                            background: #EBEBEB;
+                        }
+                        &:active {
+                            background: #DEDEDE;
+                        }
+                        .fa {
+                            position: absolute;
+                            top: 5px;
+                            left: 16px;
+                        }
+                    }
+                }
+            }
+            .rgb-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border-bottom: 1px solid #DEDEDE;
+                padding-bottom: 10px;
+            }
+            .hsl-wrapper {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                border-top: 1px solid #DEDEDE;
+                padding-top: 10px;
+            }
+        }
+        .picked-color-wrapper {
+            float: left;
+            height: 400px;
+            width: 200px;
+            margin-left: 20px;
+            .picked-color {
+                height: 180px;
+                margin-bottom: 20px;
+                border-radius: 3px;
+            }
+            .value-wrapper {
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .value-content {
+                    height: 32px;
+                    line-height: 32px;
+                    font-size: 16px;
+                    text-align: left;
+                    .copy-btn {
+                        float: right;
+                        display: inline-block;
+                        width: 55px;
+                        height: 32px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #fff;
+                        background: #6569FF;
+                        cursor: pointer;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
 }

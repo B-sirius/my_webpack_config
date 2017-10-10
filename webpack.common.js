@@ -6,19 +6,27 @@ module.exports = {
     // 文件入口
     entry: {
         /* 此处需自己按需设置 */
-        app: './src/index.js'
+        app: './src/script.js'
     },
     // 插件
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'title', // 网站标题
+            /* 此处需自己按需设置 */
+            title: 'colorPicker', // 网站标题
             template: './src/index.html'
         }),
-        new CleanWebpackPlugin(['dist'])
+        new CleanWebpackPlugin(['dist']),
     ],
     module: {
         // 文件处理
-        rules: [
+        rules: [{
+                test: /\.css$/,
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader"
+                }]
+            },
             {
                 test: /\.html$/,
                 use: [
