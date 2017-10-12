@@ -1,0 +1,143 @@
+body {
+  font-family: PingFang SC, STHeitiSC-Light, Helvetica-Light, arial, sans-serifmargink; }
+  body .color-picker-container {
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 0; }
+    body .color-picker-container .color-panel-wrapper {
+      position: relative;
+      float: left;
+      width: 400px;
+      height: 400px; }
+      body .color-picker-container .color-panel-wrapper .panel-btn {
+        position: absolute;
+        top: 0;
+        left: 400px;
+        margin-left: -12px;
+        margin-top: -10px;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        background: #C2C2C2;
+        cursor: pointer; }
+    body .color-picker-container .pick-bar-wrapper {
+      position: relative;
+      float: left;
+      width: 8px;
+      height: 400px;
+      margin-left: 23px; }
+      body .color-picker-container .pick-bar-wrapper .bar {
+        height: 100%;
+        background: linear-gradient(to bottom, red, yellow, lime, cyan, blue, magenta, red);
+        border-radius: 20px; }
+      body .color-picker-container .pick-bar-wrapper .bar-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: -8px;
+        margin-top: -12px;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        background: #C2C2C2;
+        cursor: pointer; }
+    body .color-picker-container .number-wrapper {
+      float: left;
+      height: 400px;
+      margin-left: 20px; }
+      body .color-picker-container .number-wrapper .rgb-wrapper,
+      body .color-picker-container .number-wrapper .hsl-wrapper {
+        height: 50%;
+        box-sizing: border-box; }
+        body .color-picker-container .number-wrapper .rgb-wrapper .selector-wrapper,
+        body .color-picker-container .number-wrapper .hsl-wrapper .selector-wrapper {
+          position: relative;
+          height: 55px;
+          font-size: 16px; }
+          body .color-picker-container .number-wrapper .rgb-wrapper .selector-wrapper .selector,
+          body .color-picker-container .number-wrapper .hsl-wrapper .selector-wrapper .selector {
+            position: relative;
+            width: 155px;
+            height: 100%;
+            margin-left: 15px;
+            padding-left: 10px;
+            padding-right: 40px;
+            font-size: 16px;
+            box-sizing: border-box;
+            border: 2px solid #DEDEDE;
+            border-radius: 3px;
+            outline: none; }
+          body .color-picker-container .number-wrapper .rgb-wrapper .selector-wrapper .selector-btn,
+          body .color-picker-container .number-wrapper .hsl-wrapper .selector-wrapper .selector-btn {
+            width: 40px;
+            height: 50%;
+            font-size: 14px;
+            border-left: 2px solid #DEDEDE;
+            cursor: pointer; }
+            body .color-picker-container .number-wrapper .rgb-wrapper .selector-wrapper .selector-btn.down,
+            body .color-picker-container .number-wrapper .hsl-wrapper .selector-wrapper .selector-btn.down {
+              position: absolute;
+              bottom: 0;
+              right: 0; }
+            body .color-picker-container .number-wrapper .rgb-wrapper .selector-wrapper .selector-btn.up,
+            body .color-picker-container .number-wrapper .hsl-wrapper .selector-wrapper .selector-btn.up {
+              position: absolute;
+              top: 0;
+              right: 0; }
+            body .color-picker-container .number-wrapper .rgb-wrapper .selector-wrapper .selector-btn:hover,
+            body .color-picker-container .number-wrapper .hsl-wrapper .selector-wrapper .selector-btn:hover {
+              background: #EBEBEB; }
+            body .color-picker-container .number-wrapper .rgb-wrapper .selector-wrapper .selector-btn:active,
+            body .color-picker-container .number-wrapper .hsl-wrapper .selector-wrapper .selector-btn:active {
+              background: #DEDEDE; }
+            body .color-picker-container .number-wrapper .rgb-wrapper .selector-wrapper .selector-btn .fa,
+            body .color-picker-container .number-wrapper .hsl-wrapper .selector-wrapper .selector-btn .fa {
+              position: absolute;
+              top: 5px;
+              left: 16px; }
+      body .color-picker-container .number-wrapper .rgb-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 1px solid #DEDEDE;
+        padding-bottom: 10px; }
+      body .color-picker-container .number-wrapper .hsl-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-top: 1px solid #DEDEDE;
+        padding-top: 10px; }
+    body .color-picker-container .picked-color-wrapper {
+      float: left;
+      height: 400px;
+      width: 200px;
+      margin-left: 20px; }
+      body .color-picker-container .picked-color-wrapper .picked-color {
+        height: 180px;
+        margin-bottom: 20px;
+        border-radius: 3px; }
+      body .color-picker-container .picked-color-wrapper .value-wrapper {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        body .color-picker-container .picked-color-wrapper .value-wrapper .value-content {
+          height: 32px;
+          line-height: 32px;
+          font-size: 16px;
+          text-align: left; }
+          body .color-picker-container .picked-color-wrapper .value-wrapper .value-content .copy-btn {
+            float: right;
+            display: inline-block;
+            width: 55px;
+            height: 32px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            background: #6569FF;
+            cursor: pointer;
+            border-radius: 3px; }
+
+/*# sourceMappingURL=app.538f277425b3dbda5927ddb79112148d.css.map*/

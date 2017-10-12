@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>color picker</title>
+<link href="app.538f277425b3dbda5927ddb79112148d.css" rel="stylesheet"></head>
+
+<body>
+    <div class="color-picker-container">
+        <div class="color-panel-wrapper">
+            <canvas id="panel" width="400" height="400"></canvas>
+            <div id="panelBtn" class="panel-btn"></div>
+        </div>
+        <div class="pick-bar-wrapper">
+            <div id="bar" class="bar"></div>
+            <div id="barBtn" class="bar-btn"></div>
+        </div>
+        <div class="number-wrapper">
+            <div id="rgbWrapper" class="rgb-wrapper">
+                <div class="selector-wrapper">
+                    <span class="text">R</span>
+                    <input class="selector" value="255">
+                    </input>
+                    <div class="up selector-btn">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="down selector-btn">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="selector-wrapper">
+                    <span class="text">G</span>
+                    <input class="selector" value="255">
+                    </input>
+                    <div class="up selector-btn">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="down selector-btn">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="selector-wrapper">
+                    <span class="text">B</span>
+                    <input class="selector" value="255">
+                    </input>
+                    <div class="up selector-btn">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="down selector-btn">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="hslWrapper" class="hsl-wrapper">
+                <div class="selector-wrapper">
+                    <span class="text">H</span>
+                    <input class="selector" value="1">
+                    </input>
+                    <div class="up selector-btn">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="down selector-btn">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="selector-wrapper">
+                    <span class="text">S</span>
+                    <input class="selector" value="1">
+                    </input>
+                    <div class="up selector-btn">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="down selector-btn">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="selector-wrapper">
+                    <span class="text">L</span>
+                    <input class="selector" value="1">
+                    </input>
+                    <div class="up selector-btn">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="down selector-btn">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="picked-color-wrapper">
+            <div id="pickedColor" class="picked-color"></div>
+            <div class="value-wrapper">
+                <div class="value-content">
+                    <span class="value" id="rgb"></span>
+                    <span class="copy-btn" id="rgbBtn" data-clipboard-target="#rgb">Copy</span>
+                </div>
+                <div class="value-content">
+                    <span class="value" id="hsl"></span>
+                    <span class="copy-btn" id="hslBtn" data-clipboard-target="#hsl">Copy</span>
+                </div>
+                <div class="value-content">
+                    <span class="value" id="hsv"></span>
+                    <span class="copy-btn" id="hsvBtn" data-clipboard-target="#hsv">Copy</span>
+                </div>
+            </div>
+        </div>
+<script type="text/javascript" src="runtime.6e3b5929aaa1af5fbd47.js"></script><script type="text/javascript" src="clipboard.07b0fcdcd05aa5c3c480.js"></script><script type="text/javascript" src="app.ebeb89b24fd3016a2a73.js"></script><script type="text/javascript" src="vendor.cd0d5f2f60a19cef5181.js"></script></body>
+
+</html>
